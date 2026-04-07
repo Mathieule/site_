@@ -1,0 +1,51 @@
+/* ==========================================================================
+   Base Styles / Variables
+   ========================================================================== */
+:root {
+  /* Colors - Tech Inspired Dark Mode */
+  --bg-color: #0d1117; /* GitHub Dark Base */
+  --alt-bg-color: #161b22;
+  --text-color: #e6edf3;
+  --muted-text-color: #8b949e;
+  
+  --primary: #58a6ff; /* Tech Blue */
+  --primary-hover: #3a84e6;
+  --primary-text-on: #040d16; /* For text inside light buttons */
+  
+  --accent: #238636; /* Success Green for featured */
+  --border-color: #30363d;
+  --card-bg: #21262d;
+
+  /* Typography */
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --h1-size: clamp(2rem, 5vw, 3rem);
+  --h2-size: clamp(1.75rem, 4vw, 2.5rem);
+  --lead-size: 1.25rem;
+  
+  /* Layout */
+  --container-max-width: 1200px;
+  --container-padding: 0 1.5rem;
+  --section-padding: clamp(3rem, 8vh, 6rem) 0;
+  
+  /* Transitions */
+  --transition: 0.3s ease-in-out;
+  --ease-custom: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* ==========================================================================
+   Reset & Global
+   ========================================================================== */
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4 { color: white; margin-top: 0; }
+h1 { font-size: var(--h1-size); font-weight: 800; line-height: 1.1; }
+h2 { font-size: var(--h2-size); font-weight: 7
